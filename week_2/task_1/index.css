@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+}
+
+/* input[type="text"] {
+    color: brown;
+} */
+
+/* .container-2 p {
+    color: red;
+}
+
+a:hover {
+    color: red;
+}
+
+.text {
+    color: red;
+} */
+
+.hero-container {
+    background-color: #37517E;
+    color: white;
+}
+
+.hero-container a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 70px;
+    padding-right: 70px;
+}
