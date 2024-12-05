@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card {
+    /* background-color: red; */
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+}
+
+.container .card .card-container {
+    margin: auto;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: blue; */
+    /* align-items: center; */
+}
+
+.container .card .card-container .first {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .card .card-container .second {
+    text-align: center;
+}
+
+.container .card .card-container .third {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Designing the dropdown */
+.container .dropdown {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    gap: 5px;
+}
+
+.container .dropdown:hover {
+    cursor: pointer;
+    color: #47B2E4;
+}
+
+.container .dropdown i {
+    margin-top: 3px;
+}
