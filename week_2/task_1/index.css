@@ -18,6 +18,11 @@ a:hover {
     color: red;
 } */
 
+.logo {
+    font-size: 110%;
+    padding: 2px;
+}
+
 .hero-container {
     background-color: #37517E;
     color: white;
@@ -31,6 +36,27 @@ a:hover {
 header {
     display: flex;
     justify-content: space-between;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding: 20px 50px 20px 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.links a {
+    padding: 0 10px 0 10px;
+}
+
+a:hover {
+    color: #47B2E4;
+}
+
+.start {
+    background-color: #47B2E4;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 6px 15px 6px 15px;
+    font-size: 105%;
+}
+
+span {
+    padding: -20px 0 0 0;
 }
