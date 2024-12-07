@@ -21,6 +21,8 @@
     width: 20rem;
     height: 20rem;
     background-color: green;
+    position: absolute;
+
 }
 
 .box-3 {
@@ -42,7 +44,6 @@
     width: 7rem;
     height: 7rem;
     background-color: black;
-    /* position: absolute; */
 }
 
 .box-6 {
@@ -61,6 +62,6 @@
 }
 
 .box-6:hover {
-    top: 0px;
+    top: 20px;
     left: 0px;
 }

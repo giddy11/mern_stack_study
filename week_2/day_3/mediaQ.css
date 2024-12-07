@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+}
+
+
+.box {
+    width: 300px;
+    padding: 20px;
+    background-color: lightblue;
+}
+
+@media (max-width: 600px) {
+    .box {
+        width: 500px;
+        background-color: lightgreen;
+    }
+}

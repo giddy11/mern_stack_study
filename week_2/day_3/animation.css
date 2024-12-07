@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+}
+
+@keyframes moveRight {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(500px);
+    }
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(220px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    animation-name: moveRight;
+    animation-duration: 2s;
+}
+
+.container {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto;
+    animation: moveUpDown 2s infinite;
+
+}

@@ -36,8 +36,11 @@ a:hover {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 20px 50px 20px 50px;
+    padding: 20px 0px 20px 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: fixed;
+    background-color: #37517E;
+    width: 100%;
 }
 
 .links a {
