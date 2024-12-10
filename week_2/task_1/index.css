@@ -1,31 +1,19 @@
 * {
     margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
-/* input[type="text"] {
-    color: brown;
-} */
-
-/* .container-2 p {
-    color: red;
-}
-
-a:hover {
-    color: red;
-}
-
-.text {
-    color: red;
-} */
 
 .logo {
     font-size: 110%;
-    padding: 2px;
 }
 
 .hero-container {
     background-color: #37517E;
     color: white;
+    padding: 20px 50px;
 }
 
 .hero-container a {
@@ -36,11 +24,11 @@ a:hover {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0px 20px 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: fixed;
     background-color: #37517E;
     width: 100%;
+    padding: 20px;
 }
 
 .links a {
@@ -62,4 +50,14 @@ a:hover {
 
 span {
     padding: -20px 0 0 0;
+}
+
+.hero-container .hero {
+    display: grid;
+    width: 80%;
+    grid-template-columns: auto auto;
+}
+
+.hero-container .hero .picture img{
+    width: 70%;
 }
