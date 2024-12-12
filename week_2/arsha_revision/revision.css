@@ -30,6 +30,10 @@
     font-size: 2rem;
 }
 
+.hero .container header .logo:hover {
+    cursor: pointer;
+}
+
 .hero .container header .links {
     display: flex;
     gap: 20px;
@@ -40,6 +44,12 @@
 .hero .container header .links a {
     color: white;
     text-decoration: none;
+    transition: color 0.7s;
+    transition-timing-function: ease-in;
+}
+
+.hero .container header .links a:hover {
+    color: #44A3D5;
 }
 
 .hero .container header .links button {
@@ -48,6 +58,11 @@
     border: none;
     background-color: #44A3D5;
     color: white;
+}
+
+.hero .container header .links button:hover {
+    cursor: pointer;
+    background-color: #3e96c5;
 }
 
 .hero .container .hero-content {
@@ -96,10 +111,17 @@
 
 .hero .container .hero-content .img {
     width: 45%;
+    animation: oscillate 3.5s infinite;
     /* background-color: yellow; */
 }
 
 .hero .container .hero-content .img img {
     width: 100%;
     height: 100%;
+}
+
+@keyframes oscillate {
+    0%{ transform: translateY(0rem);}
+    50%{ transform: translateY(+1.2rem);}
+    100%{ transform: translateY(0rem);}
 }
