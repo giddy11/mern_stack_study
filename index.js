@@ -30,11 +30,17 @@ Use case: Finding all items that contain the letter "o".
 includes
 Checks if an item exists in the array.
 Use case: Checking if "Bananas" are already on the list.
+
 map
 Creates a new array by applying a function to each element.
+it helps you to transform an array of an object into another array by going through all the elements
 Use case: Formatting the grocery list for display.
+
 forEach
 Iterates through the array and performs an action for each element.
+it is map without response
+also the return in forEach isnt necessary
+it automatically updates the elements
 Use case: Logging all grocery items.
  * 
  * 
@@ -45,15 +51,15 @@ let groceryList = ["Apples", "Bananas", "Carrots"];
 // 3. Combine two lists using concat
 let extraItems = ["Tomatoes", "Potatoes"];
 let combinedList = groceryList.concat(extraItems);
-console.log("Combined List:", combinedList);
+// console.log("Combined List:", combinedList);
 
 // 5. Extract a subset of items using slice
 let firstTwoItems = combinedList.slice(0, 2);
-console.log("First Two Items:", firstTwoItems); // ["Apples", "Bananas"]
+// console.log("First Two Items:", firstTwoItems); 
 
 // 7. Find the first item starting with 'T' using find
 let itemWithT = combinedList.find(item => item.startsWith("T"));
-console.log("First Item Starting with 'T':", itemWithT); // "Tomatoes"
+// console.log("First Item Starting with 'T':", itemWithT);
 
 let array_object = [
     {
@@ -67,12 +73,57 @@ let array_object = [
         type:"Technology Consulting"
     },
     {
-        id:0,
+        id:2,
         name: "TTDS",
         type:"Software Development"
     },
 ]
 
-item = array_object.find((predicate) => {
+/**
+ * The predicte is hosuing the object of the array.
+ */
 
+// item = array_object.find((predicate) => {
+//     let foundItem = predicate.id == 1
+//     return foundItem;
+// })
+
+// console.log(item)
+
+arr = ["Ada", "Joy", "Esohe", "Gideon"];
+
+// item = arr.find((pred) => {
+//     let foundJoy = pred == "Joys"
+//     return foundJoy
+// })
+
+item = arr.find((pred) => pred == "Joy")
+
+// console.log(item)
+
+
+/**
+ * FILTER
+ */
+
+item = arr.filter((pred) => {
+    return pred.includes("o");
 })
+
+// console.log(item)
+
+/**
+ * MAP
+ */
+
+newArr = array_object.map((element) => {
+    element.id++;
+    return element
+})
+
+// 10. Map to create a formatted list
+let formattedList = combinedList.map(item => `- ${item}`);
+console.log("Formatted List:", formattedList);
+// ["- Apples", "- Bananas", "- Potatoes", "- Tomatoes"]
+
+console.log(newArr)
