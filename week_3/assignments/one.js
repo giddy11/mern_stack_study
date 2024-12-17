@@ -81,3 +81,77 @@ range of 35 and 50
 value as parameters
 9. Add a date key to all the associatedDrug
  */
+
+// Questions 1 and 2
+
+let one_data, two_data, joined_data;
+ 
+one_data = info.problems[0].data_one;
+two_data = info.problems[0].data_two;
+joined_data = one_data.concat(two_data);
+
+console.log(joined_data);
+
+// Question 3
+let rbc = info.problems[0].Diabetes[0].labs[0].RBC;
+let rbc_sq = rbc ** 2;
+
+console.log(rbc_sq);
+
+// Question 4
+let cardiotan_strength = info.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className[0]["associatedDrug#2"][0].strength;
+
+let telmisartan_strength = info.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className2[0]["associatedDrug#2"][0].strength;
+
+console.log(cardiotan_strength);
+console.log(telmisartan_strength);
+
+// Quesstion 5
+let cn_one = info.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className;
+
+let cn_two = info.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className2;
+
+let cn_merge = cn_one.concat(cn_two)
+
+console.log(cn_merge);
+
+// Question 6
+info.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className2[0].associatedDrug[0].name = "amlo-di-pine";
+
+console.log(info.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className2[0].associatedDrug[0].name);
+
+
+// Question 7
+let x = info.problems[0].Diabetes[0].labs[0].WBC;
+function range () {
+    if(x>=35 && x <=50) {
+        console.log("WBC is within the range of 35 and 50.")
+    }
+    else {
+        console.log("WBC is outside the range.")
+    }
+    }
+
+range();
+
+// Question 8
+let g = info.problems[0].Diabetes[0].labs[0].WBC;
+let h = info.problems[0].Diabetes[0].labs[0].RBC;
+
+function mean (a, b) {
+    let average = (a+b)/2;
+    console.log(average);
+    }
+
+mean(g,h);
+
+// Question 9
+let ad_oneOne = info.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className[0].associatedDrug[0].date = "17-12-1999";
+
+let ad_oneTwo = info.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className[0]["associatedDrug#2"][0].date = "17-12-1999";
+
+let ad_twoOne = info.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className2[0].associatedDrug[0].date = "17-12-1999";
+
+let ad_twoTwo = info.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className2[0]["associatedDrug#2"][0].date = "17-12-1999";
+
+console.log(info.problems[0]);
