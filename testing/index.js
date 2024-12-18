@@ -2,18 +2,23 @@
  * push
 Adds an item to the end of an array.
 Use case: Adding new items like "Eggs" to the grocery list.
+
 pop
 Removes the last item from an array.
 Use case: Undo an accidental addition to the list.
+
 concat
 Combines two or more arrays into a new array.
 Use case: Combine the main list with extra items.
+
 sort
 Sorts array items alphabetically (or numerically if a custom comparator is used).
 Use case: Sorting the grocery list for better organization.
+
 slice
 Extracts a subset of an array (does not modify the original array).
 Use case: Getting the first two items for a quick shopping trip.
+
 splice
 Removes or replaces items in an array at a specific index.
 Use case: Removing an item you no longer need.
