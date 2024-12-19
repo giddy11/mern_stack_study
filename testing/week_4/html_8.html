@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Numbers - like calculator for basic arithmetic calculations
+        String - check for validity in username if it contains some characters
+        Arrays
+        Objects
+        Async
+    -->
+
+    <div style="padding: 10px; background-color: red; color: white;">
+        <h1>Sign Up</h1>
+        <label for="fullname">Fullname</label>
+        <br> <br>
+        <input id="fullname" placeholder="enter value" />
+        <br>
+        <br>
+        <label for="email">Email</label>
+        <br> <br>
+        <input id="email" placeholder="enter value" />
+        <br>
+        <br>
+        <label for="password">Password</label>
+        <br>
+        <br>
+        <input id="password" placeholder="enter value" type="password"/>
+        <br>
+        <br>
+        <button onclick="signup()">Sign Up</button>
+        <br>
+        <br>
+        <p id="result1">-----Result------</p>
+    </div>
+    <div style="padding: 10px; background-color: blue; color: white;">
+        <h1>Login</h1>
+
+        <label for="email2">Email</label>
+        <br> <br>
+        <input id="email2" placeholder="enter value" />
+        <br>
+        <br>
+        <br>
+        <br>
+        <label for="password2">Password</label>
+        <br>
+        <br>
+        <input id="password2" placeholder="enter value"  type="password"/>
+        <br>
+        <br>
+        <button onclick="login()">Login</button>
+        <br>
+        <br>
+        <p id="result2">-----Result------</p>
+    </div>
+
+</body>
+<script>
+    let users=[]
+    function signup(){
+        let fullname=document.getElementById('fullname').value
+        let email=document.getElementById('email').value
+        let password=document.getElementById('password').value
+        let result1=document.getElementById('result1')
+
+        let user=users.find(item => item.email==email)
+        if(user==null){
+            if(fullname.length>0 && email.length>0 && password.length>0){
+                users.push({
+                    fullname:fullname,
+                    email:email,
+                    password:password
+                })
+                result1.innerHTML="Successful Sign Up"
+            }
+            else{
+                result1.innerHTML="Invalid Content"
+            }
+        }
+        else{
+            result1.innerHTML="User Already Exists"
+        }
+        //Routing - Moving Page to Page
+    }
+    function login(){
+        let email2=document.getElementById('email2').value
+        let password2=document.getElementById('password2').value
+        let result2=document.getElementById('result2')
+        let user=users.find(item => item.email==email2 && item.password==password2)
+        if(user==null){
+            result2.innerHTML="Invalid User Authentication"
+        }
+        else{
+            result2.innerHTML=`Welcome to mYApp ${user.fullname}`
+            //Routed to a new page
+        }
+    }
+</script>
+</html>

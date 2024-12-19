@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .font-size {
+            font-size: 90px;
+        }
+
+        .color {
+            color: red;
+        }
+
+        .background-color {
+            background-color: wheat;
+        }
+
+        .border {
+            border: 1px solid blue;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        Continuation - Fetching Element
+        QuerySelector - this finds the first selector even when they are many selectors
+        QuerySelector - this affects all the selectors.
+    -->
+
+    <h1 class="css1 font-size color">MERN Technology School</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, tempore vel
+      animi, ea minima veniam cumque soluta sunt labore tenetur architecto
+      libero porro impedit quos? Aperiam accusamus excepturi rerum cum.
+    </p>
+    <p>This is the second P Tag</p>
+    <div id="container" class="css1"></div>
+    <button onclick="changeH1()">Click Me</button>
+    <button onclick="modifyStyle()">Modify Styles</button>
+    <h1>MERN Technology School</h1>
+  </body>
+  <script>
+    // the below is the explanation of why script is always below for a reason
+    // document.getElementById("container").style = "background-color:red; width:200px; height:100px; color:white;"
+
+    function changeH1() {
+      let h1 = document.querySelector("h1");
+      let pTags = document.querySelectorAll("p");
+      let element = document.querySelector(".css1");
+      let elements = document.querySelectorAll(".css1");
+
+      pTags.forEach((pTag, index) => {
+        pTag.textContent = `This is paragraph ${index + 1}`;
+      });
+
+      h1.style.color = "red";
+      pTags.style.color = "blue";
+
+      console.log(pTags);
+      console.log(element);
+      console.log(elements);
+    }
+
+    function modifyStyle() {
+        let element = document.querySelector(".css1")
+        console.log(element)
+        console.log(element.classList) //shows all classes
+        element.classList.remove("font-size")
+        element.classList.add("background-color")
+        element.classList.toggle("border")
+    }
+  </script>
+</html>

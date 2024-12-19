@@ -26,8 +26,34 @@
         In DOM modelling these 2 are separated but in reactJs they are together.
 
         WAY TO DISPLAY OUTPUT RESULT:
-        console, alert, html 
+        console, alert, html
 
      -->
+
+     <h1>HTML Triggers</h1>
+     <input onchange="onKeyDown()" />
+     <input onkeydown="onKeyDown()" />
+     <p onmouseenter="mouseEnterEvent()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloribus minus aut officiis at similique quasi cumque maxime accusantium unde! Exercitationem nemo dolorem perspiciatis distinctio eaque sint ipsam et esse?</p>
+     <button onclick="handleEvent()">Show Alert</button>
+     <button onclick="addParams(200,2)">Add numbers</button>
 </body>
+<script>
+    function handleEvent() {
+        console.log("Event from HTML")
+    }
+
+    function mouseEnterEvent() {
+        console.log("Mouse entered Div Item")
+        alert("Mouse entered")
+    }
+
+    function addParams(a,b) {
+        let res = a + b
+        alert(res);
+    }
+
+    function onKeyDown(){
+        alert("User pressed key");
+    }
+</script>
 </html>
