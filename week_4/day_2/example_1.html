@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        The communication between HTML, css, JS - DOM (Document Object Modelling)
+
+        Sending information from HTML to JS:
+        The use of events like (onClick, mouseOver, focus, drag, drop, onChange)
+
+        Now what about JS to HTML communication:
+        We have the Element Id, Class Name, Element Name
+    -->
+
+    <h1>HTML TRIGGERS</h1>
+    <p onmouseenter="mouseEnterEvent()" style="background-color: red;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam eveniet minima eos, qui debitis est praesentium vel ex fugiat quidem possimus perferendis voluptas maiores facilis quae explicabo laudantium quos inventore.</p>
+
+    <button onclick="handleEvent()">Show alert</button>
+    <button onclick="addNumbers(51,8)">Add numbers</button>
+</body>
+
+<script>
+function handleEvent() {
+    console.log("Event from HTML");
+    // alert("Hello")
+}
+
+function mouseEnterEvent() {
+    console.log("Mouse entered Div item");
+    alert("Mouse entered Div item")
+}
+
+function addNumbers(a,b) {
+    let res = a + b;
+    console.log(res)
+}
+
+</script>
+</html>

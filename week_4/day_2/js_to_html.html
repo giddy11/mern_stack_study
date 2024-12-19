@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .test-class {
+            background-color: brown;
+            font-size: 30px;
+            color: green;
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Content
+        Style
+        Value
+        Attribute
+    -->
+
+    <p id="pe">Hello from Emmanuel</p>
+    <div id="container"></div>
+    <input type="email" id="email">
+    <button onclick="fetchPe()">Fetch Element event</button>
+    <button onclick="changePe()">Change Content</button>
+    <button onclick="changeStyle()">Change Style Event</button>
+    <button onclick="changeAttribute()">Change Attribute Event</button>
+    <button onclick="changeValue()">Change Value Event</button>
+    <button onclick="getElementTags()">Get Element Event</button>
+</body>
+<script>
+    function getElementTags() {
+        let pTag = document.getElementById("pe")
+        let emailInput = document.getElementById("email")
+        let container = document.getElementById("container")
+
+        console.log(container.innerHTML)
+        console.log(container.innerText)
+        console.log(container.style)
+        console.log(emailInput.value)
+        console.log(emailInput.className)
+
+    }
+    function changeValue() {
+        let emailInput = document.getElementById("email")
+        emailInput.value = "emmanuel@gmail.com"
+    }
+
+    function changeAttribute() {
+        let container = document.getElementById("container")
+        container.className = "test-class"
+    }
+
+    function fetchPe() {
+        let pTag = document.getElementById("pe")
+        let emailInput = document.getElementById("email")
+
+        console.log(pTag)
+        console.log(emailInput)
+    } 
+
+    function changePe() {
+        let pTag = document.getElementById("pe")
+        let emailInput = document.getElementById("email")
+        let container = document.getElementById("container")
+
+        pTag.innerText = "This is an updated text from javascript"
+        container.innerHTML = "<p>This is from JS</p><button>Inner button</button>"
+    } 
+
+    function changeStyle() {
+        let container = document.getElementById("container")
+
+        container.style = " color:white; width:200px; height:100px;"
+
+        container.style.backgroundColor = "yellow"
+        container.style.border = "3px solid blue"
+
+        console.log("This is called")
+    }
+</script>
+</html>
