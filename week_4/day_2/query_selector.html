@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- 
         QuerySelector - this finds the first selector even when they are many selectors
         QuerySelectorAll - this affects all the selectors
@@ -13,29 +13,36 @@
 
     <h1 class="css1">MERN Technology School</h1>
     <h1 class="css1">This is second H1</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum aspernatur at sint! Quibusdam est officiis ex animi repellendus ut eveniet fuga. Voluptas nostrum optio, rem eius in cupiditate voluptatibus voluptates.</p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum aspernatur
+      at sint! Quibusdam est officiis ex animi repellendus ut eveniet fuga.
+      Voluptas nostrum optio, rem eius in cupiditate voluptatibus voluptates.
+    </p>
     <p>THis is the second P Tag</p>
     <div id="container" class="css1"></div>
     <button onclick="changeH1()">Change</button>
-</body>
-<script>
+  </body>
+  <script>
     function changeH1() {
-        // let h1 = document.querySelector("h1")
-        let h1All = document.querySelectorAll("h1")
+      // let h1 = document.querySelector("h1")
+      let h1All = document.querySelectorAll("h1");
 
-        // h1.style.color = "red"
-        h1All[1].style.color = "red"
+      // h1.style.color = "red"
+      // h1All[1].style.color = "red"
 
-        // console.log(h1)
-        console.log(h1All)
+      // console.log(h1)
+      console.log(h1All);
+      h1All.forEach((ptag, index) => {
+        // ptag.style.color = "blue";
+        ptag.textContent = `This is a paragraph ${index + 1}`;
+      });
     }
 
-    h1All.forEach(changeColor);
-    let n = 0;
+    // let n = 0;
 
-    function changeColor() {
-        h1All[n].style.color = "blue";
-        n++;
-    }
-</script>
+    // function changeColor() {
+    //     h1All[n].style.color = "blue";
+    //     n++;
+    // }
+  </script>
 </html>

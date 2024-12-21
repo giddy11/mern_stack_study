@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label for="numone">Number One</label>
+        <br> <br>
+        <input type="number" id="numone" placeholder="enter value">
+        <br> <br>
+
+        <select id="operator">
+            <option>Addition</option>
+            <option>Subtraction</option>
+            <option>Multiplication</option>
+        </select>
+        <br> <br>
+        <label for="numtwo">Number Two</label>
+        <br> <br>
+        <input type="number" id="numtwo" placeholder="enter value">
+        <br> <br>
+
+        <button onclick="calculate()">Calculate</button>
+
+        <p id="result">---------Result--------</p>
+    </div>
+</body>
+<script src="./scripts/arithmetic.js"></script>
+</html>

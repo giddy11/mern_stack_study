@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="background-color: red; color: white; padding: 10px;">
+        <h1>Sign Up Form</h1>
+        <label for="fullname">Full Name</label>
+        <br> <br>
+        <input type="text" id="fullname" placeholder="full name">
+        <br> <br>
+        <label for="email">Email</label>
+        <br> <br>
+        <input type="email" id="email" placeholder="Email">
+        <br> <br>
+        <label for="password">Password</label>
+        <br> <br>
+        <input type="password" id="password" placeholder="password">
+        <br> <br>
+
+        <button onclick="signup()">Sign up</button>
+        <br> <br>
+        <p id="result1">-------Result-------</p>
+    </div>
+
+    <div style="background-color: blue; color: white; padding: 10px;">
+        <h1>Login Form</h1>
+        <label for="email2">Email</label>
+        <br> <br>
+        <input type="email" id="email2" placeholder="Email">
+        <br> <br>
+        <label for="password2">Password</label>
+        <br> <br>
+        <input type="password" id="password2" placeholder="password">
+        <br> <br>
+
+        <button onclick="login()">Login</button>
+        <br> <br>
+        <p id="result2">-------Result-------</p>
+    </div>
+</body>
+<script src="./scripts/auth.js"></script>
+</html>
