@@ -4,6 +4,7 @@ import { mainOne, mainTwo } from '../day_2/functions';
 import Header from '../../components/header';
 import Custom_button from './custom_button';
 import React_base_func from './react_base_func';
+import Component_two from './component_two';
 
 
 /**
@@ -45,15 +46,9 @@ export default function Wk5_day22() {
             TODO: ASSIGNMENT - 1
             Convert the following into a react component
         */}
-        <div>
-            <h1>Header One</h1>
-            <p>This is Comp Content 1</p>
-        </div>
 
-        <div>
-            <h1>Header Two</h1>
-            <p>This is Comp Content 2</p>
-        </div>
+        <Component_two counter= "One" digit= "1"></Component_two>
+        <Component_two counter= "Two" digit= "2"></Component_two>
 
     </div>
   )
