@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <Wk5_day21/> */}
-    {/* <Wk5_day22/> */}
-    <Wk5_day23/>
+    <Wk5_day22/>
+    {/* <Wk5_day23/> */}
   </React.StrictMode>
 );
