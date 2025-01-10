@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Popular_product_comp(props) {
+export default function PopularProductComp(props) {
     let productIcon = props.innerImage;
     let productName = props.innerName;
     let productStatus = props.pState;
