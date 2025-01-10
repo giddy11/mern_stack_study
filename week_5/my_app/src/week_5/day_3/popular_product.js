@@ -8,6 +8,8 @@ export default function PopularProduct() {
      * Convert this design to a reusable component
      */
     <div>
+      {/* <PopularProduct></PopularProduct> */}
+      
       <div className="cost redx">
         <div className="left">
           <div className="img">
