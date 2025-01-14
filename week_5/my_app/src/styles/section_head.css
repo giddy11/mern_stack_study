@@ -1,0 +1,19 @@
+.section_name {
+    text-align: center;
+    color: #37517E;
+    font-size: 230%;
+    margin: 2rem auto;
+    margin-bottom: 0;
+}
+
+.white_div {
+    background-color: rgb(178, 177, 177);
+    width: 10rem;
+    height: 0.1rem;
+    margin: 0.5rem auto;
+}
+
+.section_text {
+    font-size: 110%;
+    text-align: center;
+}
