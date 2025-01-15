@@ -13,6 +13,13 @@ export default function Card(props) {
     let profileTitleTwo = props.title2;
     let profileTextTwo = props.ptext2;
   return (
+    /**
+     * TODO: 
+     * CORRECTIONS - 2
+     * The parent should be the filename s=which is card container
+     * Also joining 2 cards into one resuable component isnt advisable. creating one card for one dive
+     * and resusing it is best
+     */
     <div>
         <div className='container'>
            
