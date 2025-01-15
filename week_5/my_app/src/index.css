@@ -47,3 +47,24 @@ code {
 .text-2xl {
   font-size: 20px;
 }
+
+.fw-bold{
+  font-weight: bold;
+}
+.style-one{
+  padding: 10px; background-color: red; color: white;
+}
+.style-two{
+  padding: 10px; background-color: blue; color: white;
+}
+.imgone{
+  width: 100px;
+}
+.loading-tag{
+  background-color: blanchedalmond;
+  padding: 10px;
+  color: black;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
