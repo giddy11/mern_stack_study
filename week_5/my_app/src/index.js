@@ -33,6 +33,7 @@ import Header from "./components/header";
 import Page_1 from "./week_6/router_concepts/page_1";
 import Page_2 from "./week_6/router_concepts/page_2";
 import Route_param from "./week_6/router_concepts/route_param";
+import Homepage1 from "./week_7/homepage1";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -46,6 +47,7 @@ root.render(
           <Route path="/page1" element={<Page_1></Page_1>}></Route>
           <Route path="/page2" element={<Page_2></Page_2>}></Route>
           <Route path="/param/:message" element={<Route_param></Route_param>}></Route>
+          <Route path="/home1/:profile_name" element={<Homepage1></Homepage1>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
