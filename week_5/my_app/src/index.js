@@ -37,6 +37,8 @@ import Homepage1 from "./week_7/homepage1";
 import App1 from "./week_7/use_effects/app1";
 import SearchPosts from "./week_7/use_effects/search_posts";
 import App2 from "./week_7/use_effects/app2";
+import App3 from "./week_7/use_context/app3";
+import App4 from "./week_7/use_ref/app4";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -53,6 +55,8 @@ root.render(
           <Route path="/home1/:profile_name" element={<Homepage1></Homepage1>}></Route>
           <Route path="/app1" element={<App1></App1>}></Route>
           <Route path="/app2" element={<App2></App2>}></Route>
+          <Route path="/app3" element={<App3></App3>}></Route>
+          <Route path="/app4" element={<App4></App4>}></Route>
           <Route path="/search_posts" element={<SearchPosts></SearchPosts>}></Route>
         </Routes>
       </BrowserRouter>
