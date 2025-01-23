@@ -72,3 +72,7 @@ code {
 .home1-container {
   display: flex;
 }
+
+.tutorial {
+  /* display: flex; */
+}

@@ -36,6 +36,7 @@ import Route_param from "./week_6/router_concepts/route_param";
 import Homepage1 from "./week_7/homepage1";
 import App1 from "./week_7/use_effects/app1";
 import SearchPosts from "./week_7/use_effects/search_posts";
+import App2 from "./week_7/use_effects/app2";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -51,6 +52,7 @@ root.render(
           <Route path="/param/:message" element={<Route_param></Route_param>}></Route>
           <Route path="/home1/:profile_name" element={<Homepage1></Homepage1>}></Route>
           <Route path="/app1" element={<App1></App1>}></Route>
+          <Route path="/app2" element={<App2></App2>}></Route>
           <Route path="/search_posts" element={<SearchPosts></SearchPosts>}></Route>
         </Routes>
       </BrowserRouter>
