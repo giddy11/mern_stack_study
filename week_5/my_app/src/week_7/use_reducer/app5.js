@@ -1,15 +1,18 @@
 import React from 'react'
+import MyComponent1 from './myComponent1'
+import MyComponent2 from './myComponent2'
 
 export default function App5() {
   return (
     <div>
-        hello
+        {/* <MyComponent1/> */}
+        <MyComponent2/>
     </div>
   )
 }
 
 /**
- * useReducer = This helps you manage complex state lohic in react applications
+ * useReducer = This helps you manage complex state logic in react applications
  * 
  * HOW DOES IT WORK
  * -it is used to store and update states just like the useState hook
