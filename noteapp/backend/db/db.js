@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const connectToMongoDB = async () => {
   try {
     await mongoose.connect(
-      "mongodb+srv://EDOGHOTU:GigiCarly%401@cluster0.z7bzhhy.mongodb.net/noteapp"
+      process.env.DATABASE
     );
   } catch (error) {
     console.log("Error connecting to MongoDB", error.message);
